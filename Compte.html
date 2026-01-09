@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compte</title>
+    <style>
+        select{
+         margin-bottom: 20px;
+        }
+        .info {
+            width: 50%;
+            border: 1px Solid black;
+            margin-left: 25%;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        label{
+            margin-left: 5px;
+        }
+        input{
+            width: 50%;
+            margin-left: 48%;
+            margin-bottom:20%
+        }
+        .But {
+            width: 50%;
+            margin-left: 25%;
+            padding: 20px;
+        }
+
+        h3 {
+            background-color: lightgray;
+            text-align: center;
+            padding-bottom: 8px;
+           
+            
+        }
+
+        li {
+            color: crimson;
+
+        }
+
+        form {
+            border: 1xp solid black;
+            width: 50%;
+            margin-left: 25%;
+        }
+        select{
+            margin-left: 25%;
+            width: 51%;
+        }
+        #Reg{
+            background-color: skyblue;
+            border-radius: 5px;
+            border-color: skyblue;
+            color: white;
+             margin-left: 1%;
+             margin-top: 4px;
+        }
+        .White{
+         background-color: white;
+         border: 1px solid white;
+         
+        }
+        .White input{
+            margin-bottom: 2px;
+        }
+         .White label{
+            margin-top: 2px;
+        }
+        .grey{
+         background-color: lightgrey;
+         border: 1px solid lightgrey;
+
+        }
+        .grey input{
+            margin-bottom: 2px;
+        }
+         .grey label{
+            
+            margin-top: 2px;
+        }
+    #bt1{
+        background-color: greenyellow;
+        border-color: greenyellow;
+        border-radius: 5px; 
+    } 
+    #bt2{
+       background-color: red;
+       border-color: red;
+       border-radius: 5px;
+    }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h3>Création de votre compte d'accés</h3>
+        <div id="info">
+            <ul>
+                <li>Tous les champs sont obligatoires</li>
+                <li>Le mot de passe doit contenir 8 caractères minimum avec un mélange de chiffres et de lettres.</li>
+            </ul>
+        </div>
+    </form>
+        <section class="info">
+
+            <div class="White">
+                <label for="Type d'identifiant">Type d'indentifiant :</label>
+                <select name="Type d'identifiant" id="Type d'identifiant">Type d'identifiant
+                    <option> Sélectioner le type d'identifiant</option> 
+                    <option> Numéro carte étudiant</option>
+                    <option>Numéro de table</option>
+                    <option>CIN/Passeport</option>
+                    <option>INE</option>
+                </select>
+            </div>
+            <div class="grey">
+            <label for="identifiant">Votre identifiant :</label>
+            <input type="text" placeholder="Votre identifiant"><br>
+            </div>
+            <div class="White">
+            <label for="Nom de famille">Nom de famille :</label>
+            <input type="text" placeholder="Nom de famille"><br>
+            </div>
+            <div class="grey">
+            <label for="Prénoms">Prénoms :</label>
+            <input type="text" placeholder="Prénoms"><br>
+            </div>
+            <div class="White">
+            <label for="Mot de passe">Mot de passe :</label>
+            <input type="password" placeholder="Créer un mot de passe pour la connexion"><br>
+            </div>
+            <div class="grey">
+            <label for="Confirmation du mot de pass">Confirmation du mot de pass :</label>
+            <input type="password" placeholder="Confirmez votre mot de passe"><br>
+            </div>
+            <div class="White">
+            <label for="E-mail personnel">E-mail personnel :</label>
+            <input type="email" placeholder="E-mail personnel"><br>
+            </div>
+            <div class="grey">
+            <label for="Captcha">Captcha :</label>
+            <input type="text" placeholder="Saisisez les caractères ci-dessous"><br>
+            </div>
+            <button id="Reg" type=submit> Régenérer</button>
+        </section>
+    
+    <section>
+        <button id="bt1">Valider</button>
+        <button id="bt2">Annuler</button>
+    </section>
+</body>

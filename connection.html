@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Connexion</title>
+    <style>
+        Section {
+            width: 50%;
+            border: 2px Solid black;
+            border-radius: 5PX;
+            margin-left: 25%;
+            padding-bottom: 5px;
+        }
+
+        h4 {
+            text-align: center;
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        #info {
+            background-color: skyblue;
+            margin: 5xp;
+            color: rgb(31, 102, 130);
+            padding: 12px;
+            border-radius: 5PX
+        }
+
+        input {
+            padding: 6px;
+            background: transparent;
+            width: 40%;
+            border: 1px solid black;
+            border-bottom-right-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        button {
+            padding: 6px;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .divbtn button {
+            background-color: rgb(65, 157, 180);
+            border-color: rgb(65, 157, 180);
+        }
+
+        .divbtn {
+            margin-left: 53%;
+        }
+
+        .divbtn2 {
+            margin-left: 15%;
+        }
+
+        #mdp {
+            background-color: rgb(229, 169, 19);
+        }
+
+        #verif {
+            background-color: rgb(33, 101, 236);
+        }
+
+        
+
+        i {
+            padding: 6px;
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+            margin-left: 20px;
+            border: 1px Solid black;
+            background-color: lightgray;
+            justify-content: center;
+        }
+        a{
+            padding: 6px;
+            color: white;
+            border-radius: 5px;
+            border: 2px Solid rgb(20, 172, 121);
+            background-color: rgb(20, 172, 121);
+            text-decoration: none;
+        }
+        .col1{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            border: 1px black;
+            background-color: white;
+            margin-left: 30%;
+        }
+        .col2{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            border: 1px black;
+            background-color: white;
+            margin-left: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h4>ESPACE ETUDIANT</h4>
+        <div id="info">RENSEIGNER LE NOM D'UTILISATEUR ET LE MOT DE PASSE</div>
+        <form><br>
+            <div class="col1">
+                <label for="nom-et"><i class="fa-solid fa-user"></i></label>
+                <input type="text" id=nom-et placeholder="Nom d'utilisateur">
+            </div> <br>
+            <div class="col2">
+                <label for="password-input"><i class="fa-solid fa-lock"></i></label>
+                <input type="password" id="passeword-input" placeholder="Mot de passe">
+            </div> <br>
+            <div class="divbtn">
+                <label for="Se connecter"></label>
+                <button>Se connecter</button>
+            </div>
+        </form><br>
+        <div class="divbtn2">
+            <button id="mdp">Mot de passe oublié ?</button>
+            <button id="verif">Vérifier autorisation ?</button>
+            <a href="Compte.html" type="cre">créer un compte</a>
+        </div>
+    </section>
+</body>
